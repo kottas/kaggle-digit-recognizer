@@ -1,0 +1,10 @@
+{
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "batch_size": 512,
+  "auto_lr_find": false,
+  "early_stopping": false,
+  "enable_logger": true,
+  "deterministic": true,
+  "half_precision": false
+}
