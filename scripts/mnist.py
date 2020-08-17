@@ -11,9 +11,6 @@ from model.utils import MNISTDataset
 
 MAIN_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 DATA_DIR = os.path.join(MAIN_DIR, "data")
-KAGGLE_JSON = os.path.join(DATA_DIR, "kaggle.json")
-TRAIN_FILE = os.path.join(DATA_DIR, "train.csv.zip")
-TEST_FILE = os.path.join(DATA_DIR, "test.csv.zip")
 CONFIG_FILE = os.path.join(os.path.join(MAIN_DIR, "scripts"), "config.json")
 OUTPUT_DIR = os.path.join(MAIN_DIR, "results")
 
