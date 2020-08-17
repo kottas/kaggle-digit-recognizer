@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.3b0"
+flake8 = "*"
+
+[packages]
+kaggle = "*"
+numpy = "*"
+pandas = "*"
+pytorch-lightning = "*"
+torch = "*"
+tqdm = "*"
+
+[requires]
+python_version = "3.7"
