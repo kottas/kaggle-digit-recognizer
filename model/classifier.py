@@ -72,9 +72,11 @@ class MNISTClassifier:
         """
         self.early_stopping = False if val_set is None else self.early_stopping
         val_set = (
-            val_set if val_set is not None else MNISTDataset(
-                features=train_set.dataset["features"][:self.batch_size].tolist(),
-                labels=train_set.dataset["labels"][:self.batch_size].tolist()
+            val_set
+            if val_set is not None
+            else MNISTDataset(
+                features=train_set.dataset["features"][: self.batch_size].tolist(),
+                labels=train_set.dataset["labels"][: self.batch_size].tolist(),
             )
         )
 
